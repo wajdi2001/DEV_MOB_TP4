@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".view.MainActivity"
-    android:background="@drawable/background"
+    android:background="@drawable/loginpage"
     android:orientation="vertical"
     android:padding="20dp"
     android:layout_gravity="center"
@@ -20,6 +20,7 @@
         android:text="Mesure de niveau de glycémie"
         android:textSize="25sp"
         android:gravity="center"
+
         android:textColor="@color/black"
         android:textStyle="bold"
         />
@@ -32,6 +33,7 @@
         android:text="Votre Age:"
         android:textSize="25sp"
         android:textStyle="normal"
+        android:textColor="@color/black"
         />
     <SeekBar
         android:layout_width="match_parent"
@@ -39,10 +41,13 @@
         android:max="120"
         android:id="@+id/sbAge"
         android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:outlineSpotShadowColor="@color/black"
+        android:outlineProvider="paddedBounds"
         />
 
     <View
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="2dp"
         android:background="#000000" />
@@ -53,8 +58,9 @@
         android:fontFamily="@font/playfair_display"
         android:layout_marginTop="30dp"
         android:text="Est-ce que vous jêunez?"
-        android:textSize="25sp"
+        android:textSize="30sp"
         android:textStyle="normal"
+        android:textColor="@color/black"
 
         />
 
@@ -72,7 +78,8 @@
             android:layout_weight="1"
             android:text="Oui"
             android:textColor="@color/black"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:layout_marginRight="150dp"/>
         <RadioButton
             android:id="@+id/rbtNon"
             android:layout_width="0dp"
@@ -94,7 +101,7 @@
         android:background="@drawable/edittext_border"
         />
     <Button
-        android:id="@+id/btn"
+        android:id="@+id/buttonConsult"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"

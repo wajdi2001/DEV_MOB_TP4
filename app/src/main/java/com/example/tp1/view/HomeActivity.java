@@ -17,7 +17,7 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         btnHome =findViewById(R.id.btnhome);
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, loginPage.class);
         btnHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

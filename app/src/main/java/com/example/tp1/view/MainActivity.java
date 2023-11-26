@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         sbAge = findViewById(R.id.sbAge); // Liaison avec la barre de progression "sbAge" dans le layout
 
         rbGrp = findViewById(R.id.rbGrp); // Liaison avec le groupe de boutons radio "rbGrp" dans le layout
-        btn = findViewById(R.id.btn); // Liaison avec le bouton "btn" dans le layout
+        btn = findViewById(R.id.buttonConsult); // Liaison avec le bouton "btn" dans le layout
 
         // Gestionnaire de changement de progression de la barre d'âge
         sbAge.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
-                Toast.makeText(MainActivity.this, "Arrêt du suivi tactile", Toast.LENGTH_SHORT).show();
+
             }
         });
 
