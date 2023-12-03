@@ -9,9 +9,9 @@ import retrofit2.Call;
 import retrofit2.http.*;
 
 public interface ApiService {
-    @FormUrlEncoded
-    @POST("/mesure/comptes/login")
-    Call<ResponseBody> login(@Field("email") String email, @Field("motDePasse") String motDePasse);
+
+    @POST("/mesure/compte")
+    Call<Compte> createCompte(@Body Compte compte);
 
     @GET("/mesure/compte/{email}/{motDePasse}")
     Call<Compte> getCompteByEmailAndPassword(
@@ -24,7 +24,7 @@ public interface ApiService {
     Call<Compte> getCompteById(@Path("id") Long id);
 
     @GET("/mesure/comptes")
-    Call<List<Compte>> getComptesWithStatus(@Query("actif") boolean actif);
+    Call<List<Compte>> getAllComptes();
 
     @PUT("/mesure/comptes/{id}")
     Call<Compte> updateCompte(@Path("id") Long id, @Body Compte compte);

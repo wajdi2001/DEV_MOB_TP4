@@ -98,4 +98,5 @@ public class Controller {
 
         return contientChiffre && contientMajuscule;
     }
+
 }

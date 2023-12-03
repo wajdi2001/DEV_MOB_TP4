@@ -68,8 +68,33 @@
         android:text="@string/login_button"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@id/editTextPassword"
+        app:layout_constraintEnd_toEndOf="@id/editTextEmail"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@id/editTextPassword" />
+        app:layout_constraintStart_toStartOf="@id/editTextEmail" />
+    <GridLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/buttonLogin"
+        android:layout_marginStart="90dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/buttonLogin"
+        app:layout_constraintTop_toBottomOf="@id/buttonLogin"
+
+        >
+        <TextView
+            android:text="Already have account?"
+            />
+
+        <Button
+            android:id="@+id/buttonSignUp1"
+            android:textSize="20sp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:background="#00000000"
+            android:padding="0dp"
+            android:text="Sign Un"
+            android:textColor="#03A9F4" />
+    </GridLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
